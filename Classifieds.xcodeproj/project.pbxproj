@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		49930CFE22352AC400235825 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49930CFD22352AC400235825 /* AppDelegate.swift */; };
-		49930D0022352AC400235825 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49930CFF22352AC400235825 /* ViewController.swift */; };
 		49930D0322352AC400235825 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49930D0122352AC400235825 /* Main.storyboard */; };
 		49930D0522352AC500235825 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49930D0422352AC500235825 /* Assets.xcassets */; };
 		49930D0822352AC500235825 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49930D0622352AC500235825 /* LaunchScreen.storyboard */; };
+		49930D1022352AD500235825 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49930D0F22352AD500235825 /* Ad.swift */; };
+		49930D1222352B1500235825 /* CategoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49930D1122352B1500235825 /* CategoriesTableViewController.swift */; };
+		49930D1422352B6000235825 /* AdTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49930D1322352B6000235825 /* AdTableViewController.swift */; };
+		49930D1722353E3700235825 /* AdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49930D1622353E3700235825 /* AdController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49930CFA22352AC400235825 /* Classifieds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Classifieds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49930CFD22352AC400235825 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49930CFF22352AC400235825 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49930D0222352AC400235825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49930D0422352AC500235825 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49930D0722352AC500235825 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49930D0922352AC500235825 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49930D0F22352AD500235825 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
+		49930D1122352B1500235825 /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
+		49930D1322352B6000235825 /* AdTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdTableViewController.swift; sourceTree = "<group>"; };
+		49930D1522353B2C00235825 /* Classifieds.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Classifieds.entitlements; sourceTree = "<group>"; };
+		49930D1622353E3700235825 /* AdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +61,58 @@
 		49930CFC22352AC400235825 /* Classifieds */ = {
 			isa = PBXGroup;
 			children = (
-				49930CFD22352AC400235825 /* AppDelegate.swift */,
-				49930CFF22352AC400235825 /* ViewController.swift */,
-				49930D0122352AC400235825 /* Main.storyboard */,
-				49930D0422352AC500235825 /* Assets.xcassets */,
-				49930D0622352AC500235825 /* LaunchScreen.storyboard */,
-				49930D0922352AC500235825 /* Info.plist */,
+				49930D1522353B2C00235825 /* Classifieds.entitlements */,
+				49930D1C22355FA300235825 /* Resources */,
+				49930D1922355F5C00235825 /* Models */,
+				49930D1822355F3900235825 /* Controllers */,
+				49930D1A22355F7200235825 /* ViewControllers */,
+				49930D1B22355F9500235825 /* UI */,
 			);
 			path = Classifieds;
+			sourceTree = "<group>";
+		};
+		49930D1822355F3900235825 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49930D1622353E3700235825 /* AdController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49930D1922355F5C00235825 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49930D0F22352AD500235825 /* Ad.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49930D1A22355F7200235825 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				49930D1122352B1500235825 /* CategoriesTableViewController.swift */,
+				49930D1322352B6000235825 /* AdTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		49930D1B22355F9500235825 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				49930D0122352AC400235825 /* Main.storyboard */,
+				49930D0622352AC500235825 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		49930D1C22355FA300235825 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49930CFD22352AC400235825 /* AppDelegate.swift */,
+				49930D0422352AC500235825 /* Assets.xcassets */,
+				49930D0922352AC500235825 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +147,11 @@
 				TargetAttributes = {
 					49930CF922352AC400235825 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49930D0022352AC400235825 /* ViewController.swift in Sources */,
+				49930D1222352B1500235825 /* CategoriesTableViewController.swift in Sources */,
 				49930CFE22352AC400235825 /* AppDelegate.swift in Sources */,
+				49930D1422352B6000235825 /* AdTableViewController.swift in Sources */,
+				49930D1022352AD500235825 /* Ad.swift in Sources */,
+				49930D1722353E3700235825 /* AdController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +341,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Classifieds/Classifieds.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Classifieds/Info.plist;
+				DEVELOPMENT_TEAM = 294QD2DU2P;
+				INFOPLIST_FILE = "$(SRCROOT)/Classifieds/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,8 +360,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Classifieds/Classifieds.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Classifieds/Info.plist;
+				DEVELOPMENT_TEAM = 294QD2DU2P;
+				INFOPLIST_FILE = "$(SRCROOT)/Classifieds/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
